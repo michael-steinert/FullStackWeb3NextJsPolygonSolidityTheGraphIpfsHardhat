@@ -6,7 +6,8 @@
 
 ## Queries
 * Query to get a List of Posts:
-  `{
+```graphql
+{
   posts {
   id
   title
@@ -14,32 +15,36 @@
   published
   postContent
   }
-  }`
+}
+```
 
 * Query to get a List of Posts and configure the Order Direction by Creation Date:
-  `{
+```graphql
+{
   posts(
-  orderBy: createdAtTimestamp
-  orderDirection: desc
+    orderBy: createdAtTimestamp
+    orderDirection: desc
   ) {
-  id
-  title
-  contentHash
-  published
-  postContent
+    id
+    title
+    contentHash
+    published
+    postContent
   }
-  }`
+}
+```
 
 * Do a Full Text Search on the Post Title or Content:
-  `{
-  posts(
-  orderBy: createdAtTimestamp
-  orderDirection: desc
+```graphql
+{
+  postSearch(
+    text: "Hello"
   ) {
-  id
-  title
-  contentHash
-  published
-  postContent
+    id
+    title
+    contentHash
+    published
+    postContent
   }
-  }`
+}
+```

@@ -23,9 +23,11 @@ npx hardhat help
 
 ## Commands
 
-* Deploy Smart Contract to Polygon Testnet:`npx hardhat run scripts/deploy.js --network mumbai`
+* Deploy Smart Contract to Polygon Testnet:
+* `npx hardhat run scripts/deploy.js --network mumbai`
 
-* Initialize TheGraph Project for given Smart Contract Address: `graph init --from-contract 0x97F5Ab844C0eAfa22eEF85480Bf9f5BfD70deaE7 --network mumbai --contract-name Blog --index-events`
+* Initialize TheGraph Project for given Smart Contract Address:
+* `graph init --from-contract 0x97F5Ab844C0eAfa22eEF85480Bf9f5BfD70deaE7 --network mumbai --contract-name Blog --index-events`
 * Parameters:
   * Protocol: ethereum
   * Product for which to initialize: hosted-service
